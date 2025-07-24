@@ -21,8 +21,21 @@
     },
     "files": [
       "src/**/*",
-      "assets/**/*",
-      "node_modules/**/*"
+      "assets/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "assets/yt-dlp.exe",
+        "to": "yt-dlp.exe"
+      },
+      {
+        "from": "assets/ffmpeg.exe",
+        "to": "ffmpeg.exe"
+      },
+      {
+        "from": "assets/ffprobe.exe",
+        "to": "ffprobe.exe"
+      }
     ],
     "win": {
       "target": "nsis",

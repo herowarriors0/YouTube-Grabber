@@ -325,51 +325,49 @@ async function convertMkvToMp4(mkvPath, ffmpegPath) {
 }
 
 function getYtDlpPath() {
-  const bundledPath = path.join(process.resourcesPath, 'yt-dlp.exe');
-  if (fs.existsSync(bundledPath)) {
-    return bundledPath;
+  const prodPath = path.join(process.resourcesPath, 'yt-dlp.exe');
+  if (fs.existsSync(prodPath)) {
+    return prodPath;
   }
-  
+
   const devPath = path.join(__dirname, '../assets/yt-dlp.exe');
   if (fs.existsSync(devPath)) {
     return devPath;
   }
-  
+
   return 'yt-dlp';
 }
 
 function getFfmpegPath() {
-  try {
-    return require('ffmpeg-static');
-  } catch (e) {
-    const bundledPath = path.join(process.resourcesPath, 'ffmpeg.exe');
-    if (fs.existsSync(bundledPath)) {
-      return bundledPath;
-    }
-    
-    const devPath = path.join(__dirname, '../assets/ffmpeg.exe');
-    if (fs.existsSync(devPath)) {
-      return devPath;
-    }
-    
-    return 'ffmpeg';
+  // Always prefer unpacked binary in production
+  const prodPath = path.join(process.resourcesPath, 'ffmpeg.exe');
+  if (fs.existsSync(prodPath)) {
+    return prodPath;
   }
+
+  // Development: use assets folder
+  const devPath = path.join(__dirname, '../assets/ffmpeg.exe');
+  if (fs.existsSync(devPath)) {
+    return devPath;
+  }
+
+  // Fallback: system ffmpeg
+  return 'ffmpeg';
 }
 
 function getFfprobePath() {
-  try {
-    return require('ffprobe-static');
-  } catch (e) {
-    const bundledPath = path.join(process.resourcesPath, 'ffprobe.exe');
-    if (fs.existsSync(bundledPath)) {
-      return bundledPath;
-    }
-    
-    const devPath = path.join(__dirname, '../assets/ffprobe.exe');
-    if (fs.existsSync(devPath)) {
-      return devPath;
-    }
-    
-    return 'ffprobe';
+  // Always prefer unpacked binary in production
+  const prodPath = path.join(process.resourcesPath, 'ffprobe.exe');
+  if (fs.existsSync(prodPath)) {
+    return prodPath;
   }
+
+  // Development: use assets folder
+  const devPath = path.join(__dirname, '../assets/ffprobe.exe');
+  if (fs.existsSync(devPath)) {
+    return devPath;
+  }
+
+  // Fallback: system ffprobe
+  return 'ffprobe';
 }
