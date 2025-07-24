@@ -1,0 +1,41 @@
+{
+  "app": {
+    "title": "YouTube Letöltő",
+    "subtitle": "Tölts le YouTube videókat és hangokat egyszerűen"
+  },
+  "ui": {
+    "selectFolder": "Mappa kiválasztása",
+    "folderPath": "📁 Célmappa:",
+    "folderPlaceholder": "Válassz célmappát...",
+    "browse": "Tallózás",
+    "openInExplorer": "Megnyitás Intézőben",
+    "youtubeUrl": "🔗 YouTube URL:",
+    "urlPlaceholder": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "fetchingInfo": "Videó információ lekérése...",
+    "audioOnly": "🎵 Csak hang (MP3)",
+    "videoQuality": "🎬 Videó minőség:",
+    "bestQuality": "Legjobb minőség",
+    "downloadVideo": "⬇️ Videó letöltése",
+    "downloadAudio": "⬇️ Hang letöltése",
+    "starting": "Letöltés indítása...",
+    "cancel": "❌ Letöltés megszakítása",
+    "about": "ℹ️ Névjegy",
+    "version": "YouTube Letöltő v1.0.0",
+    "description": "Önálló alkalmazás YouTube videók és hangok letöltésére.",
+    "features": "Támogatja a különböző videó minőségeket és csak hang letöltését.",
+    "technology": "Electron és yt-dlp technológiával építve.",
+    "language": "Nyelv"
+  },
+  "messages": {
+    "folderSelected": "Mappa sikeresen kiválasztva",
+    "invalidUrl": "Kérlek adj meg egy érvényes YouTube URL-t",
+    "selectFolderFirst": "Először válassz ki egy célmappát",
+    "downloadStarted": "Letöltés elkezdődött",
+    "downloadCompleted": "Letöltés sikeresen befejezve!",
+    "downloadCancelled": "Letöltés megszakítva",
+    "downloadFailed": "Letöltés sikertelen",
+    "errorOccurred": "Hiba történt",
+    "videoInfoFetched": "Videó információ sikeresen lekérve",
+    "noVideoFormats": "Nincsenek elérhető videó formátumok ehhez a videóhoz"
+  }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Grabber</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div class="header">
+            <h1 data-i18n="app.title">🎥 YouTube Grabber</h1>
+            <p data-i18n="app.subtitle">Download YouTube videos and audio easily</p>
+        </div>
+
+        <!-- Toast notification -->
+        <div id="toast" class="toast"></div>
+
+        <!-- Folder selection -->
+        <div class="section">
+            <div class="form-group">
+                <label for="folderPath" data-i18n="ui.folderPath">📁 Destination Folder:</label>
+                <div class="input-button-group">
+                    <input type="text" id="folderPath" data-i18n="ui.folderPlaceholder" placeholder="Choose destination folder..." readonly>
+                    <button id="selectFolderBtn" class="btn btn-secondary" data-i18n="ui.browse">Browse</button>
+                </div>
+                <button id="openFolderBtn" class="btn btn-outline" data-i18n="ui.openInExplorer" disabled>Open in Explorer</button>
+            </div>
+        </div>
+
+        <!-- YouTube URL section -->
+        <div class="section">
+            <div class="form-group">
+                <label for="youtubeUrl" data-i18n="ui.youtubeUrl">🔗 YouTube URL:</label>
+                <input type="text" id="youtubeUrl" data-i18n="ui.urlPlaceholder" placeholder="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <span id="fetchingInfo" class="info-text" data-i18n="ui.fetchingInfo" style="display: none;">Fetching video information...</span>
+            </div>
+        </div>
+
+        <!-- Video preview -->
+        <div id="videoPreview" class="section" style="display: none;">
+            <div class="video-info">
+                <img id="thumbnail" class="thumbnail" alt="Video thumbnail">
+                <div class="video-details">
+                    <h3 id="videoTitle"></h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Download settings -->
+        <div class="section">
+            <div class="form-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="audioOnly">
+                    <span class="checkmark"></span>
+                    <span data-i18n="ui.audioOnly">🎵 Audio Only (MP3)</span>
+                </label>
+            </div>
+
+            <div class="form-group" id="qualityGroup">
+                <label for="quality" data-i18n="ui.videoQuality">🎬 Video Quality:</label>
+                <select id="quality">
+                    <option value="best" data-i18n="ui.bestQuality">Best Quality</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Download section -->
+        <div class="section">
+            <div id="downloadButton">
+                <button id="downloadBtn" class="btn btn-primary btn-large" data-i18n="ui.downloadVideo" disabled>
+                    ⬇️ Download Video
+                </button>
+            </div>
+
+            <div id="downloadProgress" style="display: none;">
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div id="progressFill" class="progress-fill"></div>
+                    </div>
+                    <div id="progressText" class="progress-text" data-i18n="ui.starting">Starting download...</div>
+                </div>
+                <button id="cancelBtn" class="btn btn-danger" data-i18n="ui.cancel">❌ Cancel Download</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="i18n.js"></script>
+    <script src="renderer.js"></script>
+</body>
+</html>

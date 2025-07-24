@@ -1,0 +1,44 @@
+{
+  "name": "youtube-grabber",
+  "version": "1.0.0",
+  "description": "Standalone YouTube video downloader",
+  "main": "src/main.js",
+  "homepage": "./",
+  "author": "Your Name",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "build": "electron-builder",
+    "dist": "electron-builder --publish=never",
+    "pack": "electron-builder --dir"
+  },
+  "build": {
+    "appId": "com.youtubegrabber.app",
+    "productName": "YouTube Grabber",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "assets/**/*",
+      "node_modules/**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "dependencies": {
+    "electron": "^22.0.0",
+    "ffmpeg-static": "^5.1.0",
+    "ffprobe-static": "^3.1.0"
+  },
+  "devDependencies": {
+    "electron-builder": "^24.0.0"
+  }
+}

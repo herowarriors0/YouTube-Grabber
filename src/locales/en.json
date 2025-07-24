@@ -1,0 +1,41 @@
+{
+  "app": {
+    "title": "YouTube Grabber",
+    "subtitle": "Download YouTube videos and audio easily"
+  },
+  "ui": {
+    "selectFolder": "Select Folder",
+    "folderPath": "📁 Destination Folder:",
+    "folderPlaceholder": "Choose destination folder...",
+    "browse": "Browse",
+    "openInExplorer": "Open in Explorer",
+    "youtubeUrl": "🔗 YouTube URL:",
+    "urlPlaceholder": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "fetchingInfo": "Fetching video information...",
+    "audioOnly": "🎵 Audio Only (MP3)",
+    "videoQuality": "🎬 Video Quality:",
+    "bestQuality": "Best Quality",
+    "downloadVideo": "⬇️ Download Video",
+    "downloadAudio": "⬇️ Download Audio",
+    "starting": "Starting download...",
+    "cancel": "❌ Cancel Download",
+    "about": "ℹ️ About",
+    "version": "YouTube Grabber v1.0.0",
+    "description": "Standalone application for downloading YouTube videos and audio.",
+    "features": "Supports various video qualities and audio-only downloads.",
+    "technology": "Built with Electron and yt-dlp technology.",
+    "language": "Language"
+  },
+  "messages": {
+    "folderSelected": "Folder selected successfully",
+    "invalidUrl": "Please enter a valid YouTube URL",
+    "selectFolderFirst": "Please select a destination folder first",
+    "downloadStarted": "Download started",
+    "downloadCompleted": "Download completed successfully!",
+    "downloadCancelled": "Download cancelled",
+    "downloadFailed": "Download failed",
+    "errorOccurred": "An error occurred",
+    "videoInfoFetched": "Video information fetched successfully",
+    "noVideoFormats": "No video formats available for this video"
+  }
+}
