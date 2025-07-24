@@ -21,7 +21,8 @@
     },
     "files": [
       "src/**/*",
-      "assets/**/*"
+      "assets/**/*",
+      "!node_modules/**/*"
     ],
     "extraResources": [
       {
@@ -43,12 +44,12 @@
     },
     "nsis": {
       "oneClick": false,
-      "allowToChangeInstallationDirectory": true
-    }
-  },
-  "dependencies": {
-    "ffmpeg-static": "^5.1.0",
-    "ffprobe-static": "^3.1.0"
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    },
+    "compression": "maximum",
+    "npmRebuild": false
   },
   "devDependencies": {
     "electron": "^22.0.0",
