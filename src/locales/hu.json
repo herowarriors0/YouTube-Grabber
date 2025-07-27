@@ -1,12 +1,12 @@
 {
   "app": {
     "title": "YouTube Letöltő",
-    "subtitle": "Tölts le YouTube videókat és hangokat egyszerűen"
+    "subtitle": "Töltsön le YouTube videókat és hangokat egyszerűen"
   },
   "ui": {
     "selectFolder": "Mappa kiválasztása",
     "folderPath": "📁 Célmappa:",
-    "folderPlaceholder": "Válassz célmappát...",
+    "folderPlaceholder": "Válassza ki a célmappát...",
     "browse": "Tallózás",
     "openInExplorer": "Megnyitás Intézőben",
     "youtubeUrl": "🔗 YouTube URL:",
@@ -22,14 +22,14 @@
     "about": "ℹ️ Névjegy",
     "version": "YouTube Letöltő v1.0.0",
     "description": "Önálló alkalmazás YouTube videók és hangok letöltésére.",
-    "features": "Támogatja a különböző videó minőségeket és csak hang letöltését.",
+    "features": "Támogatja a különböző videó minőségeket és a csak hang letöltését.",
     "technology": "Electron és yt-dlp technológiával építve.",
     "language": "Nyelv"
   },
   "messages": {
     "folderSelected": "Mappa sikeresen kiválasztva",
-    "invalidUrl": "Kérlek adj meg egy érvényes YouTube URL-t",
-    "selectFolderFirst": "Először válassz ki egy célmappát",
+    "invalidUrl": "Kérem, adjon meg egy érvényes YouTube URL-t",
+    "selectFolderFirst": "Először válasszon ki egy célmappát",
     "downloadStarted": "Letöltés elkezdődött",
     "downloadCompleted": "Letöltés sikeresen befejezve!",
     "downloadCancelled": "Letöltés megszakítva",

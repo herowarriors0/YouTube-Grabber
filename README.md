@@ -26,6 +26,9 @@ A modern, standalone YouTube video downloader built with Electron technology. Th
    npm install
    ```
    **Note:** The node_modules folder is quite large (~800MB) due to Electron and its dependencies. This folder is excluded from version control via .gitignore and will be created when you run `npm install`.
+5. Complete the Assets (Binaries) setup:
+   - Download `ffmpeg.exe` and `ffprobe.exe` from the official FFmpeg website as described in the [Assets (Binaries)](#assets-binaries) section below.
+   - Place them in the `assets/` folder. The app will not work without these files.
 
 ## Assets (Binaries)
 

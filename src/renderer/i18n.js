@@ -84,12 +84,12 @@ class I18nManager {
             this.translations.hu = {
                 "app": {
                     "title": "YouTube Letöltő",
-                    "subtitle": "Tölts le YouTube videókat és hangokat egyszerűen"
+                    "subtitle": "Töltsön le YouTube videókat és hangokat egyszerűen"
                 },
                 "ui": {
                     "selectFolder": "Mappa kiválasztása",
                     "folderPath": "📁 Célmappa:",
-                    "folderPlaceholder": "Válassz célmappát...",
+                    "folderPlaceholder": "Válassza ki a célmappát...",
                     "browse": "Tallózás",
                     "openInExplorer": "Megnyitás Intézőben",
                     "youtubeUrl": "🔗 YouTube URL:",
@@ -106,8 +106,8 @@ class I18nManager {
                 },
                 "messages": {
                     "folderSelected": "Mappa sikeresen kiválasztva",
-                    "invalidUrl": "Kérlek adj meg egy érvényes YouTube URL-t",
-                    "selectFolderFirst": "Először válassz ki egy célmappát",
+                    "invalidUrl": "Kérem, adjon meg egy érvényes YouTube URL-t",
+                    "selectFolderFirst": "Először válasszon ki egy célmappát",
                     "downloadStarted": "Letöltés elkezdődött",
                     "downloadCompleted": "Letöltés sikeresen befejezve!",
                     "downloadCancelled": "Letöltés megszakítva",

@@ -1,10 +1,10 @@
 {
   "name": "youtube-grabber",
-  "version": "1.0.0",
-  "description": "Standalone YouTube video downloader",
+  "version": "1.0.1",
+  "description": "YouTube video downloader",
   "main": "src/main.js",
   "homepage": "./",
-  "author": "Your Name",
+  "author": "Hero Warriors",
   "license": "MIT",
   "scripts": {
     "start": "electron .",

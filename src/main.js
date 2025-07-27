@@ -223,7 +223,7 @@ ipcMain.handle('download-video', async (event, options) => {
             const progress = parseFloat(match[1]);
             if (!isNaN(progress)) {
               mainWindow.webContents.send('download-progress', {
-                progress: (progress * 80) / 100,
+                progress: progress,
                 text: `Letöltés: ${progress.toFixed(1)}%`
               });
             }
@@ -307,7 +307,7 @@ async function convertMkvToMp4(mkvPath, ffmpegPath) {
 
       if (progress.out_time_ms) {
         mainWindow.webContents.send('download-progress', {
-          progress: 90,
+          progress: 95,
           text: 'Konvertálás MP4 formátumra...'
         });
       }
